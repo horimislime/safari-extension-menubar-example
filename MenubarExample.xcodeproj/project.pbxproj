@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13611D82220EB5310010E5AE /* MenubarExample.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 13611D81220EB5310010E5AE /* MenubarExample.entitlements */; };
+		13611D84220EB5310010E5AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13611D83220EB5310010E5AE /* AppDelegate.swift */; };
+		13611D87220EB5310010E5AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13611D85220EB5310010E5AE /* Main.storyboard */; };
+		13611D89220EB5310010E5AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13611D88220EB5310010E5AE /* ViewController.swift */; };
+		13611D8B220EB5340010E5AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13611D8A220EB5340010E5AE /* Assets.xcassets */; };
+		13611D92220EB5340010E5AE /* MenubarExample Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 13611D91220EB5340010E5AE /* MenubarExample Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		13611D97220EB5340010E5AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13611D96220EB5340010E5AE /* Cocoa.framework */; };
+		13611D9A220EB5340010E5AE /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13611D99220EB5340010E5AE /* SafariExtensionHandler.swift */; };
+		13611D9C220EB5340010E5AE /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13611D9B220EB5340010E5AE /* SafariExtensionViewController.swift */; };
+		13611D9F220EB5340010E5AE /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13611D9D220EB5340010E5AE /* SafariExtensionViewController.xib */; };
+		13611DA2220EB5340010E5AE /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 13611DA1220EB5340010E5AE /* script.js */; };
+		13611DA4220EB5340010E5AE /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 13611DA3220EB5340010E5AE /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13611D93220EB5340010E5AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13611D76220EB5310010E5AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13611D90220EB5340010E5AE;
+			remoteInfo = "MenubarExample Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13611DAB220EB5340010E5AE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				13611D92220EB5340010E5AE /* MenubarExample Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13611D7E220EB5310010E5AE /* MenubarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenubarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13611D81220EB5310010E5AE /* MenubarExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenubarExample.entitlements; sourceTree = "<group>"; };
+		13611D83220EB5310010E5AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13611D86220EB5310010E5AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13611D88220EB5310010E5AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13611D8A220EB5340010E5AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13611D8C220EB5340010E5AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13611D91220EB5340010E5AE /* MenubarExample Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MenubarExample Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13611D96220EB5340010E5AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		13611D99220EB5340010E5AE /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		13611D9B220EB5340010E5AE /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		13611D9E220EB5340010E5AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		13611DA0220EB5340010E5AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13611DA1220EB5340010E5AE /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		13611DA3220EB5340010E5AE /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		13611DA5220EB5340010E5AE /* MenubarExample_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenubarExample_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13611D7B220EB5310010E5AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13611D8E220EB5340010E5AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13611D97220EB5340010E5AE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13611D75220EB5310010E5AE = {
+			isa = PBXGroup;
+			children = (
+				13611D80220EB5310010E5AE /* MenubarExample */,
+				13611D98220EB5340010E5AE /* MenubarExample Extension */,
+				13611D95220EB5340010E5AE /* Frameworks */,
+				13611D7F220EB5310010E5AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13611D7F220EB5310010E5AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13611D7E220EB5310010E5AE /* MenubarExample.app */,
+				13611D91220EB5340010E5AE /* MenubarExample Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13611D80220EB5310010E5AE /* MenubarExample */ = {
+			isa = PBXGroup;
+			children = (
+				13611D81220EB5310010E5AE /* MenubarExample.entitlements */,
+				13611D83220EB5310010E5AE /* AppDelegate.swift */,
+				13611D85220EB5310010E5AE /* Main.storyboard */,
+				13611D88220EB5310010E5AE /* ViewController.swift */,
+				13611D8A220EB5340010E5AE /* Assets.xcassets */,
+				13611D8C220EB5340010E5AE /* Info.plist */,
+			);
+			path = MenubarExample;
+			sourceTree = "<group>";
+		};
+		13611D95220EB5340010E5AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13611D96220EB5340010E5AE /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13611D98220EB5340010E5AE /* MenubarExample Extension */ = {
+			isa = PBXGroup;
+			children = (
+				13611D99220EB5340010E5AE /* SafariExtensionHandler.swift */,
+				13611D9B220EB5340010E5AE /* SafariExtensionViewController.swift */,
+				13611D9D220EB5340010E5AE /* SafariExtensionViewController.xib */,
+				13611DA0220EB5340010E5AE /* Info.plist */,
+				13611DA1220EB5340010E5AE /* script.js */,
+				13611DA3220EB5340010E5AE /* ToolbarItemIcon.pdf */,
+				13611DA5220EB5340010E5AE /* MenubarExample_Extension.entitlements */,
+			);
+			path = "MenubarExample Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13611D7D220EB5310010E5AE /* MenubarExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13611DAC220EB5340010E5AE /* Build configuration list for PBXNativeTarget "MenubarExample" */;
+			buildPhases = (
+				13611D7A220EB5310010E5AE /* Sources */,
+				13611D7B220EB5310010E5AE /* Frameworks */,
+				13611D7C220EB5310010E5AE /* Resources */,
+				13611DAB220EB5340010E5AE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13611D94220EB5340010E5AE /* PBXTargetDependency */,
+			);
+			name = MenubarExample;
+			productName = MenubarExample;
+			productReference = 13611D7E220EB5310010E5AE /* MenubarExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13611D90220EB5340010E5AE /* MenubarExample Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13611DA8220EB5340010E5AE /* Build configuration list for PBXNativeTarget "MenubarExample Extension" */;
+			buildPhases = (
+				13611D8D220EB5340010E5AE /* Sources */,
+				13611D8E220EB5340010E5AE /* Frameworks */,
+				13611D8F220EB5340010E5AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MenubarExample Extension";
+			productName = "MenubarExample Extension";
+			productReference = 13611D91220EB5340010E5AE /* MenubarExample Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13611D76220EB5310010E5AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = horimislime;
+				TargetAttributes = {
+					13611D7D220EB5310010E5AE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					13611D90220EB5340010E5AE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 13611D79220EB5310010E5AE /* Build configuration list for PBXProject "MenubarExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13611D75220EB5310010E5AE;
+			productRefGroup = 13611D7F220EB5310010E5AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13611D7D220EB5310010E5AE /* MenubarExample */,
+				13611D90220EB5340010E5AE /* MenubarExample Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13611D7C220EB5310010E5AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13611D82220EB5310010E5AE /* MenubarExample.entitlements in Resources */,
+				13611D8B220EB5340010E5AE /* Assets.xcassets in Resources */,
+				13611D87220EB5310010E5AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13611D8F220EB5340010E5AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13611DA4220EB5340010E5AE /* ToolbarItemIcon.pdf in Resources */,
+				13611D9F220EB5340010E5AE /* SafariExtensionViewController.xib in Resources */,
+				13611DA2220EB5340010E5AE /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13611D7A220EB5310010E5AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13611D89220EB5310010E5AE /* ViewController.swift in Sources */,
+				13611D84220EB5310010E5AE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13611D8D220EB5340010E5AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13611D9C220EB5340010E5AE /* SafariExtensionViewController.swift in Sources */,
+				13611D9A220EB5340010E5AE /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13611D94220EB5340010E5AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13611D90220EB5340010E5AE /* MenubarExample Extension */;
+			targetProxy = 13611D93220EB5340010E5AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13611D85220EB5310010E5AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13611D86220EB5310010E5AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13611D9D220EB5340010E5AE /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13611D9E220EB5340010E5AE /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13611DA6220EB5340010E5AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13611DA7220EB5340010E5AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		13611DA9220EB5340010E5AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MenubarExample Extension/MenubarExample_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MenubarExample Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.MenubarExample-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		13611DAA220EB5340010E5AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MenubarExample Extension/MenubarExample_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MenubarExample Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.MenubarExample-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		13611DAD220EB5340010E5AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MenubarExample/MenubarExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MenubarExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenubarExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		13611DAE220EB5340010E5AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MenubarExample/MenubarExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MenubarExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenubarExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13611D79220EB5310010E5AE /* Build configuration list for PBXProject "MenubarExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13611DA6220EB5340010E5AE /* Debug */,
+				13611DA7220EB5340010E5AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13611DA8220EB5340010E5AE /* Build configuration list for PBXNativeTarget "MenubarExample Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13611DA9220EB5340010E5AE /* Debug */,
+				13611DAA220EB5340010E5AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13611DAC220EB5340010E5AE /* Build configuration list for PBXNativeTarget "MenubarExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13611DAD220EB5340010E5AE /* Debug */,
+				13611DAE220EB5340010E5AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13611D76220EB5310010E5AE /* Project object */;
+}
